@@ -10,6 +10,7 @@ export class LayoutComponent implements OnInit {
   @Input() appName: string = '';
   @Input() copyRightName: string = '';
   @Input() copyRightUrl: string = '';
+  @Input() repositoryUrl: string = '';
 
   constructor() { }
 
