@@ -12,6 +12,10 @@ export class FooterComponent implements OnInit {
   @Input() copyRightName: string = '';
   @Input() copyRightUrl: string = '';
 
+  get currentYear() {
+    return new Date().getFullYear()
+  }
+
   constructor() { }
 
   ngOnInit(): void {
