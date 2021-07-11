@@ -1,0 +1,7 @@
+[build]
+  publish = "dist/app-learning"
+  command = "npm run prod"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
