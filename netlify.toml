@@ -1,6 +1,8 @@
+[build.environment]
+  NPM_FLAGS="--prefix=/"
 [build]
-  publish = "dist/app-learning"
-  command = "npm run prod"
+  publish = "dist/practicas-angular"
+  command = "npm run build"
 [[redirects]]
   from = "/*"
   to = "/index.html"

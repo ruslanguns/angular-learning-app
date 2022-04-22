@@ -4,7 +4,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { BasicStateComponent } from './basic-state/basic-state.component';
 import { StateManagementComponent } from './state-management.component';
 
-
 const routes: Routes = [
   {
     path: '',
@@ -12,20 +11,14 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: BasicStateComponent
-      }
-    ]
-  }
-]
+        component: BasicStateComponent,
+      },
+    ],
+  },
+];
 
 @NgModule({
-  declarations: [
-    BasicStateComponent,
-    StateManagementComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes)
-  ]
+  declarations: [BasicStateComponent, StateManagementComponent],
+  imports: [CommonModule, RouterModule.forChild(routes)],
 })
-export class StateManagementModule { }
+export class StateManagementModule {}
