@@ -1,0 +1,6 @@
+<nav *ngIf="config.items.length"
+  class="flex flex-wrap items-center justify-center text-base cursor-pointer md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400">
+
+  <a *ngFor="let item of config.items" class="mr-5 hover:text-gray-900" [routerLink]="[item.url]">{{ item.title}}</a>
+
+</nav>
