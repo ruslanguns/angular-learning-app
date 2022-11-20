@@ -25,7 +25,7 @@ specifiers:
   rxjs: ~7.5.0
   tailwindcss: ^3.0.24
   tslib: ^2.3.0
-  typescript: ~4.6.2
+  typescript: ~4.9.0
   zone.js: ~0.11.4
 
 dependencies:
@@ -42,9 +42,9 @@ dependencies:
   zone.js: 0.11.5
 
 devDependencies:
-  '@angular-devkit/build-angular': 13.3.3_603f7d367c2579ddfe3995d983f81c69
+  '@angular-devkit/build-angular': 13.3.3_605f0d772f38be31d4e24d77ae3ba240
   '@angular/cli': 13.3.3
-  '@angular/compiler-cli': 13.3.4_f21c7a3178639b7471296fac11e355ee
+  '@angular/compiler-cli': 13.3.4_4aeb94550245d5b3ac809047e81a5eb8
   '@types/jasmine': 3.10.6
   '@types/node': 12.20.48
   autoprefixer: 10.4.4_postcss@8.4.12
@@ -56,7 +56,7 @@ devDependencies:
   karma-jasmine-html-reporter: 1.7.0_e4024afc4b33f5324b7ac68d65dbdd69
   postcss: 8.4.12
   tailwindcss: 3.0.24
-  typescript: 4.6.3
+  typescript: 4.9.3
 
 packages:
 
@@ -85,7 +85,7 @@ packages:
       - chokidar
     dev: true
 
-  /@angular-devkit/build-angular/13.3.3_603f7d367c2579ddfe3995d983f81c69:
+  /@angular-devkit/build-angular/13.3.3_605f0d772f38be31d4e24d77ae3ba240:
     resolution: {integrity: sha512-iEpNF3tF+9Gw+qQKL63fPFHIvWokJdrgVU4GzENQ5QeL8zk8iYTEbH3jWogq5tWy5+VmNP/mKkasq9i78lRiYw==}
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
@@ -115,7 +115,7 @@ packages:
       '@angular-devkit/architect': 0.1303.3
       '@angular-devkit/build-webpack': 0.1303.3_c42d66f338fdf8eb26480f9fc4b04152
       '@angular-devkit/core': 13.3.3
-      '@angular/compiler-cli': 13.3.4_f21c7a3178639b7471296fac11e355ee
+      '@angular/compiler-cli': 13.3.4_4aeb94550245d5b3ac809047e81a5eb8
       '@babel/core': 7.16.12
       '@babel/generator': 7.16.8
       '@babel/helper-annotate-as-pure': 7.16.7
@@ -126,7 +126,7 @@ packages:
       '@babel/runtime': 7.16.7
       '@babel/template': 7.16.7
       '@discoveryjs/json-ext': 0.5.6
-      '@ngtools/webpack': 13.3.3_6afe24f86456156a676c490d29159c7b
+      '@ngtools/webpack': 13.3.3_3140250f834af185c4cc605deeda073b
       ansi-colors: 4.1.1
       babel-loader: 8.2.3_b899f084ebd6472309450457d1eff97e
       babel-plugin-istanbul: 6.1.1
@@ -173,7 +173,7 @@ packages:
       text-table: 0.2.0
       tree-kill: 1.2.2
       tslib: 2.3.1
-      typescript: 4.6.3
+      typescript: 4.9.3
       webpack: 5.70.0_esbuild@0.14.22
       webpack-dev-middleware: 5.3.0_webpack@5.70.0
       webpack-dev-server: 4.7.3_webpack@5.70.0
@@ -184,6 +184,7 @@ packages:
     transitivePeerDependencies:
       - '@swc/core'
       - '@types/express'
+      - bluebird
       - bufferutil
       - chokidar
       - debug
@@ -277,6 +278,7 @@ packages:
       symbol-observable: 4.0.0
       uuid: 8.3.2
     transitivePeerDependencies:
+      - bluebird
       - chokidar
       - supports-color
     dev: true
@@ -293,7 +295,7 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /@angular/compiler-cli/13.3.4_f21c7a3178639b7471296fac11e355ee:
+  /@angular/compiler-cli/13.3.4_4aeb94550245d5b3ac809047e81a5eb8:
     resolution: {integrity: sha512-wCnt2YOS5EiwWCEv8oCqIfiwUtifs+COhcYH6fpmf/3X9w1yKO1ZMA+OsFQ0IVS4d0YYavm5DTPQ2ep2c0sF5w==}
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
     hasBin: true
@@ -311,7 +313,7 @@ packages:
       semver: 7.3.7
       sourcemap-codec: 1.4.8
       tslib: 2.4.0
-      typescript: 4.6.3
+      typescript: 4.9.3
       yargs: 17.4.1
     transitivePeerDependencies:
       - supports-color
@@ -322,7 +324,6 @@ packages:
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0}
     dependencies:
       tslib: 2.4.0
-    dev: false
 
   /@angular/core/13.3.4_rxjs@7.5.5+zone.js@0.11.5:
     resolution: {integrity: sha512-PqPwx9oaV0Bh0m0fdI2jtXUC6s04jfD4vyzB4sjEuRI9pRUnZ6M5hZ5Vn/KJVZyt411MevbJfqzUVf0W+GDZew==}
@@ -731,6 +732,8 @@ packages:
     resolution: {integrity: sha512-vqUSBLP8dQHFPdPi9bc5GK9vRkYHJ49fsZdtoJ8EQ8ibpwk5rPKfvNIwChB0KVXcIjcepEBBd2VHC5r9Gy8ueg==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.17.0
     dev: true
 
   /@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/7.16.7_@babel+core@7.16.12:
@@ -1640,7 +1643,7 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.11
     dev: true
 
-  /@ngtools/webpack/13.3.3_6afe24f86456156a676c490d29159c7b:
+  /@ngtools/webpack/13.3.3_3140250f834af185c4cc605deeda073b:
     resolution: {integrity: sha512-O6EzafKfFuvI3Ju941u7ANs0mT7YDdChbVRhVECCPWOTm3Klr73js3bnCDzaJlxZNjzlG/KeUu5ghrhbMrHjSw==}
     engines: {node: ^12.20.0 || ^14.15.0 || >=16.10.0, npm: ^6.11.0 || ^7.5.6 || >=8.0.0, yarn: '>= 1.13.0'}
     peerDependencies:
@@ -1648,8 +1651,8 @@ packages:
       typescript: '>=4.4.3 <4.7'
       webpack: ^5.30.0
     dependencies:
-      '@angular/compiler-cli': 13.3.4_f21c7a3178639b7471296fac11e355ee
-      typescript: 4.6.3
+      '@angular/compiler-cli': 13.3.4_4aeb94550245d5b3ac809047e81a5eb8
+      typescript: 4.9.3
       webpack: 5.70.0_esbuild@0.14.22
     dev: true
 
@@ -1700,6 +1703,8 @@ packages:
       promise-retry: 2.0.1
       semver: 7.3.5
       which: 2.0.2
+    transitivePeerDependencies:
+      - bluebird
     dev: true
 
   /@npmcli/installed-package-contents/1.0.7:
@@ -1745,6 +1750,7 @@ packages:
       node-gyp: 8.4.1
       read-package-json-fast: 2.0.3
     transitivePeerDependencies:
+      - bluebird
       - supports-color
     dev: true
 
@@ -2418,6 +2424,8 @@ packages:
       qs: 6.9.7
       raw-body: 2.4.3
       type-is: 1.6.18
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /body-parser/1.20.0:
@@ -2436,6 +2444,8 @@ packages:
       raw-body: 2.5.1
       type-is: 1.6.18
       unpipe: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /bonjour/3.5.0:
@@ -2536,6 +2546,8 @@ packages:
       ssri: 8.0.1
       tar: 6.1.11
       unique-filename: 1.1.1
+    transitivePeerDependencies:
+      - bluebird
     dev: true
 
   /cacache/16.0.6:
@@ -2560,6 +2572,8 @@ packages:
       ssri: 9.0.0
       tar: 6.1.11
       unique-filename: 1.1.1
+    transitivePeerDependencies:
+      - bluebird
     dev: true
 
   /call-bind/1.0.2:
@@ -2747,6 +2761,8 @@ packages:
       on-headers: 1.0.2
       safe-buffer: 5.1.2
       vary: 1.1.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /concat-map/0.0.1:
@@ -2766,6 +2782,8 @@ packages:
       finalhandler: 1.1.2
       parseurl: 1.3.3
       utils-merge: 1.0.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /console-control-strings/1.1.0:
@@ -2968,12 +2986,22 @@ packages:
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.0.0
     dev: true
 
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.1.3
     dev: true
@@ -3480,7 +3508,6 @@ packages:
       esbuild-windows-64: 0.14.22
       esbuild-windows-arm64: 0.14.22
     dev: true
-    optional: true
 
   /escalade/3.1.1:
     resolution: {integrity: sha512-k0er2gUkLf8O0zKJiAhmkTnJlTvINGv7ygDNPbeIsX/TJjGJZHuh9B2UxbsaEkmlEo9MfhrSzmhIlhRlI2GXnw==}
@@ -3599,6 +3626,8 @@ packages:
       type-is: 1.6.18
       utils-merge: 1.0.1
       vary: 1.1.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /extend/3.0.2:
@@ -3671,6 +3700,8 @@ packages:
       parseurl: 1.3.3
       statuses: 1.5.0
       unpipe: 1.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /find-cache-dir/3.3.2:
@@ -4119,7 +4150,7 @@ packages:
     dev: true
 
   /image-size/0.5.5:
-    resolution: {integrity: sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=}
+    resolution: {integrity: sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==}
     engines: {node: '>=0.10.0'}
     hasBin: true
     requiresBuild: true
@@ -4610,6 +4641,8 @@ packages:
       mime: 1.6.0
       needle: 2.9.1
       source-map: 0.6.1
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /license-webpack-plugin/4.0.2_webpack@5.70.0:
@@ -4762,6 +4795,7 @@ packages:
       socks-proxy-agent: 6.2.0
       ssri: 9.0.0
     transitivePeerDependencies:
+      - bluebird
       - supports-color
     dev: true
 
@@ -4786,6 +4820,7 @@ packages:
       socks-proxy-agent: 6.2.0
       ssri: 8.0.1
     transitivePeerDependencies:
+      - bluebird
       - supports-color
     dev: true
 
@@ -5021,6 +5056,8 @@ packages:
       debug: 3.2.7
       iconv-lite: 0.4.24
       sax: 1.2.4
+    transitivePeerDependencies:
+      - supports-color
     dev: true
     optional: true
 
@@ -5075,6 +5112,7 @@ packages:
       tar: 6.1.11
       which: 2.0.2
     transitivePeerDependencies:
+      - bluebird
       - supports-color
     dev: true
 
@@ -5157,6 +5195,7 @@ packages:
       minizlib: 2.1.2
       npm-package-arg: 8.1.5
     transitivePeerDependencies:
+      - bluebird
       - supports-color
     dev: true
 
@@ -5344,6 +5383,7 @@ packages:
       ssri: 8.0.1
       tar: 6.1.11
     transitivePeerDependencies:
+      - bluebird
       - supports-color
     dev: true
 
@@ -5473,6 +5513,8 @@ packages:
       async: 2.6.4
       debug: 3.2.7
       mkdirp: 0.5.6
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /postcss-attribute-case-insensitive/5.0.0_postcss@8.4.5:
@@ -5909,6 +5951,11 @@ packages:
 
   /promise-inflight/1.0.1:
     resolution: {integrity: sha1-mEcocL8igTL8vdhoEputEsPAKeM=}
+    peerDependencies:
+      bluebird: '*'
+    peerDependenciesMeta:
+      bluebird:
+        optional: true
     dev: true
 
   /promise-retry/2.0.1:
@@ -6334,6 +6381,8 @@ packages:
       on-finished: 2.3.0
       range-parser: 1.2.1
       statuses: 1.5.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /serialize-javascript/6.0.0:
@@ -6353,6 +6402,8 @@ packages:
       http-errors: 1.6.3
       mime-types: 2.1.35
       parseurl: 1.3.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /serve-static/1.14.2:
@@ -6363,6 +6414,8 @@ packages:
       escape-html: 1.0.3
       parseurl: 1.3.3
       send: 0.17.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /set-blocking/2.0.0:
@@ -6864,8 +6917,8 @@ packages:
     resolution: {integrity: sha512-KNNZtayBCtmnNmbo5mG47p1XsCyrx6iVqomjcZnec/1Y5GGARaxPs6r49RnSPeUP3YjNYiU9sQHAtY4BBvnZwg==}
     dev: true
 
-  /typescript/4.6.3:
-    resolution: {integrity: sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==}
+  /typescript/4.9.3:
+    resolution: {integrity: sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
